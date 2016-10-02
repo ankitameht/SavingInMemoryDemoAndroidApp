@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     //User puts phone on silent mode
     private boolean sharedPrefValue = false;
     private Button mRegisterButton;
+    private Button mMemoryButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +59,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        mMemoryButton = (Button) findViewById(R.id.button3);
+        mMemoryButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, InternalExternalActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     @Override
@@ -74,5 +84,36 @@ public class MainActivity extends AppCompatActivity {
         Toast toast = Toast.makeText(context, "Current Preference is "+sharedPrefValue, duration);
         toast.show();
 
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d(TAG, "onStart");
+
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d(TAG, "onDestroy");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d(TAG, "onPause");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d(TAG, "onresume");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.d(TAG, "onrestart");
     }
 }

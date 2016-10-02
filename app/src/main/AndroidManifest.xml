@@ -21,6 +21,10 @@
         <activity
             android:name=".LeaderBoard_Activity"
             android:label="@string/title_activity_leader_board_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".InternalExternalActivity"
+            android:label="@string/title_activity_internal_external"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

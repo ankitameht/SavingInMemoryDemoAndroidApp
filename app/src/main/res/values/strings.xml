@@ -12,4 +12,7 @@
     <string name="update_button_name">Update</string>
     <string name="delete_db_button_name">Reset Database</string>
     <string name="remove_button_name">De-Register</string>
+    <string name="title_activity_internal_external">InternalExternalActivity</string>
+    <string name="FileInputTextHint">Enter Text here</string>
+    <string name="GoforInternalExternalDemo">Internal External Memory Demo</string>
 </resources>
