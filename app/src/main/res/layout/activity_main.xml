@@ -7,24 +7,23 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="in.innovatehub.ankita_mehta.savingdataapplication.MainActivity">
+    tools:context="in.innovatehub.ankita_mehta.savingdataapplication.MainActivity"
+    android:background="#c2051b7f">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/preferences_Button"
         android:id="@+id/button"
-        android:layout_alignParentBottom="true"
-        android:layout_alignEnd="@+id/button2" />
+        android:background="#261c1c"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -32,6 +31,8 @@
         android:layout_height="wrap_content"
         android:text="@string/RegisterForLeaderBoard"
         android:id="@+id/button2"
+        android:background="#261c1c"
+        android:textColor="#ffffff"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 
@@ -41,7 +42,9 @@
         android:layout_height="wrap_content"
         android:text="@string/GoforInternalExternalDemo"
         android:id="@+id/button3"
-        android:layout_centerVertical="true"
+        android:background="#261c1c"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/button2"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

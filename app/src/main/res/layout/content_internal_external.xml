@@ -10,7 +10,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="in.innovatehub.ankita_mehta.savingdataapplication.InternalExternalActivity"
-    tools:showIn="@layout/activity_internal_external">
+    tools:showIn="@layout/activity_internal_external"
+    android:background="#c2051b7f">
 
 
     <EditText
@@ -20,6 +21,7 @@
         android:hint="@string/FileInputTextHint"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:textColor="#ff00ff"
         android:layout_marginTop="64dp" />
 
     <Button
@@ -28,7 +30,9 @@
         android:text="Save In Internal"
         android:id="@+id/SaveInInternal_Button"
         android:layout_toEndOf="@+id/FileInputText"
-        android:layout_alignParentBottom="true" />
+        android:layout_alignParentBottom="true"
+        android:background="#261c1c"
+        android:textColor="#ffffff" />
 
     <Button
         android:layout_width="wrap_content"
@@ -36,5 +40,7 @@
         android:text="Save In External"
         android:id="@+id/SaveInExternal_Button"
         android:layout_alignParentBottom="true"
-        android:layout_toStartOf="@+id/FileInputText" />
+        android:layout_toStartOf="@+id/FileInputText"
+        android:background="#261c1c"
+        android:textColor="#ffffff"/>
 </RelativeLayout>
