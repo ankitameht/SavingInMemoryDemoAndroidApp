@@ -62,6 +62,7 @@ public class InternalExternalActivity extends AppCompatActivity {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
+                filenameSample = filename;
                 FileOutputStream outputStream;
                 try {
                     outputStream = new FileOutputStream(filename, false);
