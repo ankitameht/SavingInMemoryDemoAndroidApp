@@ -30,7 +30,7 @@ public class LeaderBoard_Activity extends AppCompatActivity {
     TextView mShowText;
     Button mUpdateButton;
     Button mRemoveButton;
-    Button mDropButton;
+
 
     final String TAG="Lead";
     private SQLiteDatabase db;
@@ -86,13 +86,7 @@ public class LeaderBoard_Activity extends AppCompatActivity {
             }
         });
 
-        mDropButton = (Button) findViewById(R.id.DropDBFromSQL);
-        mDropButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                dropInDB();
-            }
-        });
+
 
     }
 

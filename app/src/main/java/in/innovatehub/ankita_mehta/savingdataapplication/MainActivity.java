@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private boolean sharedPrefValue = false;
     private Button mRegisterButton;
     private Button mMemoryButton;
+    private Button mShowSharedButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,6 +66,17 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, InternalExternalActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        mShowSharedButton = (Button) findViewById(R.id.button);
+        mShowSharedButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Context context = getApplicationContext();
+                int duration = Toast.LENGTH_SHORT;
+                Toast toast = Toast.makeText(context, "Current Preference is " + sharedPrefValue, duration);
+                toast.show();
             }
         });
 
