@@ -8,43 +8,59 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="in.innovatehub.ankita_mehta.savingdataapplication.MainActivity"
-    android:background="#c2051b7f">
+    android:background="#c2051b7f"
+    android:layout_gravity="center"
+    android:gravity="center">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView" />
 
-    <Button
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/preferences_Button"
-        android:id="@+id/button"
-        android:background="#261c1c"
-        android:textColor="#ffffff"
-        android:layout_below="@+id/button2"
-        android:layout_centerHorizontal="true" />
+        android:orientation="vertical"
+        android:gravity="center">
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/RegisterForLeaderBoard"
-        android:id="@+id/button2"
-        android:background="#261c1c"
-        android:textColor="#ffffff"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/preferences_Button"
+            android:id="@+id/button"
+            android:background="#261c1c"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/button2"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/abc_action_bar_content_inset_material"
+            android:layout_margin="@dimen/activity_horizontal_margin"/>
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/GoforInternalExternalDemo"
-        android:id="@+id/button3"
-        android:background="#261c1c"
-        android:textColor="#ffffff"
-        android:layout_above="@+id/button2"
-        android:layout_centerHorizontal="true" />
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/RegisterForLeaderBoard"
+            android:id="@+id/button2"
+            android:background="#261c1c"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/abc_action_bar_content_inset_material"
+            android:layout_margin="@dimen/activity_horizontal_margin"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/GoforInternalExternalDemo"
+            android:id="@+id/button3"
+            android:background="#261c1c"
+            android:textColor="#ffffff"
+            android:layout_above="@+id/button2"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/abc_action_bar_content_inset_material"
+            android:layout_margin="@dimen/activity_horizontal_margin"/>
+
+    </LinearLayout>
 
 </RelativeLayout>

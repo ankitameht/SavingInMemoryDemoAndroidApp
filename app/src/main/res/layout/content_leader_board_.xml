@@ -3,30 +3,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#c2051b7f">
+    android:background="#c2051b7f"
+    android:gravity="center">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="172dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_gravity="center_vertical">
+        android:gravity="center">
         <EditText
-            android:layout_width="237dp"
-            android:layout_height="53dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:hint="@string/leader_id"
-            android:id="@+id/editText11" />
+            android:id="@+id/editText11"
+            android:layout_centerHorizontal="true" />
 
         <EditText
-            android:layout_width="237dp"
-            android:layout_height="53dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:hint="@string/leader_name"
-            android:id="@+id/editText2" />
+            android:id="@+id/editText2"
+            android:layout_centerHorizontal="true"/>
 
         <EditText
-            android:layout_width="237dp"
-            android:layout_height="53dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:hint="@string/leader_score"
-            android:id="@+id/editText3" />
+            android:id="@+id/editText3"
+            android:layout_centerHorizontal="true"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
@@ -38,7 +42,8 @@
         android:text="@string/button_name"
         android:id="@+id/saveInSQL"
         android:background="#261c1c"
-        android:textColor="#ffffff"/>
+        android:textColor="#ffffff"
+        android:layout_margin="@dimen/activity_horizontal_margin"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -46,34 +51,40 @@
         android:text="@string/update_button_name"
         android:id="@+id/updateInSQL"
         android:background="#261c1c"
-        android:textColor="#ffffff"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_name2"
-        android:id="@+id/showDbFromSQL"
-        android:background="#261c1c"
-        android:textColor="#ffffff"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/delete_db_button_name"
-        android:id="@+id/DropDBFromSQL"
-        android:background="#261c1c"
-        android:textColor="#ffffff"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/remove_button_name"
-        android:id="@+id/DeleteFromSQL"
-        android:background="#261c1c"
-        android:textColor="#ffffff"/>
+        android:textColor="#ffffff"
+        android:layout_margin="@dimen/activity_horizontal_margin"/>
 
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_name2"
+            android:id="@+id/showDbFromSQL"
+            android:background="#261c1c"
+            android:textColor="#ffffff"
+            android:layout_margin="@dimen/activity_horizontal_margin"/>
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delete_db_button_name"
+            android:id="@+id/DropDBFromSQL"
+            android:background="#261c1c"
+            android:textColor="#ffffff"
+            android:layout_margin="@dimen/activity_horizontal_margin"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remove_button_name"
+            android:id="@+id/DeleteFromSQL"
+            android:background="#261c1c"
+            android:textColor="#ffffff"
+            android:layout_margin="@dimen/activity_horizontal_margin"/>
+    </LinearLayout>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
