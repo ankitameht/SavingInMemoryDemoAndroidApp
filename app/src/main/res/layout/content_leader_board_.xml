@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:layout_width="237dp"
+        android:layout_height="53dp"
+        android:hint="@string/leader_id"
+        android:id="@+id/editText11" />
+
+    <EditText
+        android:layout_width="237dp"
+        android:layout_height="53dp"
+        android:hint="@string/leader_name"
+        android:id="@+id/editText2" />
+
+    <EditText
+        android:layout_width="237dp"
+        android:layout_height="53dp"
+        android:hint="@string/leader_score"
+        android:id="@+id/editText3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_name"
+        android:id="@+id/saveInSQL"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/update_button_name"
+        android:id="@+id/updateInSQL"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_name2"
+        android:id="@+id/showDbFromSQL"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_db_button_name"
+        android:id="@+id/DropDBFromSQL"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/remove_button_name"
+        android:id="@+id/DeleteFromSQL"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="hi!"
+        android:id="@+id/textView_result"
+        android:layout_gravity="center_horizontal" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id = "@+id/list_view">
+
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="prefs_file_name">PREFS_FILE</string>
+    <string name="preferences_Button">Save Preferences Demo</string>
+    <string name="leader_id">id</string>
+    <string name="leader_name">name</string>
+    <string name="leader_score">score</string>
+    <string name="button_name">Register</string>
+    <string name="button_name2">Show DB</string>
+    <string name="RegisterForLeaderBoard">View Leader Board Activity</string>
+    <string name="update_button_name">Update</string>
+    <string name="delete_db_button_name">Reset Database</string>
+    <string name="remove_button_name">Remove</string>
+</resources>
