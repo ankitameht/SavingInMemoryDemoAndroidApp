@@ -19,10 +19,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/FileInputText"
         android:hint="@string/FileInputTextHint"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
         android:textColor="#ff00ff"
-        android:layout_marginTop="64dp" />
+        android:layout_above="@+id/ShowExternal_Button"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -43,4 +42,26 @@
         android:layout_toStartOf="@+id/FileInputText"
         android:background="#261c1c"
         android:textColor="#ffffff"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show last saved internal"
+        android:id="@+id/ShowInternal_Button"
+        android:background="#261c1c"
+        android:textColor="#ffffff"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show last saved external"
+        android:id="@+id/ShowExternal_Button"
+        android:background="#261c1c"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/ShowInternal_Button"
+        android:layout_alignStart="@+id/ShowInternal_Button" />
+
 </RelativeLayout>
